@@ -47,53 +47,18 @@ A full-stack **Sneaker E-Commerce Web Application** built using **React.js**, **
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/sneaker-store.git
-```
-
-### 2️⃣ Install Backend Dependencies
-
-```bash
-cd server
-npm install
-```
-
-### 3️⃣ Install Frontend Dependencies
-
-```bash
-cd client
-npm install
-```
-
-### 4️⃣ Setup Environment Variables
-
-Create a `.env` file in the **server** folder and add:
-
-```
-PORT=9000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-```
-
----
-
 ## ▶️ Run the Project
 
 ### Start Backend Server
 
 ```bash
-cd server
-npm start
+
+node index.js
 ```
 
 ### Start Frontend
 
 ```bash
-cd client
 npm start
 ```
 
@@ -136,8 +101,3 @@ http://localhost:9000
 
 Bachelor of Computer Applications (BCA)
 
----
-
-## ⭐ Support
-
-If you like this project, please give it a ⭐ on GitHub!
