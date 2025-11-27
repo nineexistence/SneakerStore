@@ -1,0 +1,308 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .about-us-wrapper {
+    background: var(--porcelain-white);
+    font-family: 'Inter', sans-serif;
+    color: var(--jet-black);
+  }
+  
+  /* === Hero Section === */
+  .hero-section {
+    background: linear-gradient(135deg, #EFE8D8, var(--porcelain-white));
+    padding: 60px;
+    margin: 0 auto 60px;
+    max-width: 90%;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 260px;
+  }
+  
+  .hero-text h1 {
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--jet-black);
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .hero-subtext {
+    color: var(--ash-gray);
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .hero-image {
+    flex: 1;
+    min-width: 260px;
+    max-width: 3000px;
+    text-align: right;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* === Features Section === */
+  .features-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: var(--porcelain-white);
+  }
+  
+  .feature-box {
+    background: var(--porcelain-white)3dc;
+    color: var(--jet-black);
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1 1 280px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-6px);
+  }
+  
+  .feature-box h2 {
+    color: var(--taupe-beige);
+    font-size: 18px;
+  }
+  
+  .feature-box h3 {
+    color: var(--jet-black);
+    margin: 10px 0;
+  }
+  
+  .feature-box p {
+    color: var(--ash-gray);
+    font-size: 14px;
+  }
+  
+  .icon {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+  
+  /* === Stats === */
+  .stats-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--porcelain-white);
+  }
+  
+  .stat-block h2 {
+    color: var(--taupe-beige);
+    font-size: 28px;
+  }
+  
+  .stat-block p {
+    font-size: 14px;
+    color: var(--jet-black);
+  }
+  
+  /* === Highlight Section === */
+  .about-highlight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: var(--porcelain-white);
+    padding: 60px 20px;
+  }
+  
+  .about-highlight .text {
+    flex: 1;
+    min-width: 300px;
+    color: var(--jet-black);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 350px; /* Matches the image height */
+    padding: 20px 0;
+  }
+  
+  .about-highlight .image {
+    flex: 1;
+    min-width: 300px;
+    height: 350px;
+    border-radius: 12px;
+    background-image: url('https://i.pinimg.com/736x/91/e4/e6/91e4e65536635e2f311d2cf95cac12cb.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  }
+  
+  .about-highlight h2 {
+    font-size: 40px;
+    color: var(--taupe-beige);
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .about-highlight h3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    color: var(--jet-black);
+    text-align: left;
+  }
+  
+  .about-highlight p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a3b36;
+    margin-bottom: 24px;
+    text-align: left;
+    
+  }
+  
+  .highlight-btn {
+    background-color: var(--taupe-beige);
+    color: #4b2a2f;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .highlight-btn:hover {
+    background-color: var(--porcelain-white)3dc;
+    transform: scale(1.05);
+  }
+  
+  /* === Benefits Section === */
+  .benefit-section {
+    background-color: var(--porcelain-white);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .benefit-section h2 {
+    color: var(--taupe-beige);
+    font-size: 18px;
+  }
+  
+  .benefit-section h3 {
+    font-size: 24px;
+    color: var(--jet-black);
+    margin-bottom: 30px;
+  }
+  
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .benefits div {
+    background-color: var(--porcelain-white);
+    color: var(--jet-black);
+    flex: 1 1 260px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+  }
+  
+  .benefits div:hover {
+    transform: translateY(-4px);
+  }
+  
+  .benefits h4 {
+    color: var(--jet-black);
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .benefits p {
+    font-size: 14px;
+    color: var(--ash-gray);
+  }
+  
+  /* === Promo Section === */
+  .pastel-promo-section {
+    background-color: var(--porcelain-white)0ea;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pastel-promo {
+    background: linear-gradient(135deg, #EFE8D8, var(--porcelain-white));
+    padding: 30px 40px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    gap: 20px;
+  }
+  
+  .promo-left h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--jet-black);
+  }
+  
+  .promo-left p {
+    font-size: 15px;
+    color: var(--jet-black);
+  }
+  
+  .promo-btn {
+    background-color: var(--taupe-beige);
+    color: #4b2a2f;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .promo-btn:hover {
+    background-color: var(--porcelain-white)3dc;
+    transform: scale(1.05);
+  }
+  

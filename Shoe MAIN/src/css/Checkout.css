@@ -1,0 +1,179 @@
+/* Checkout.css */
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* LEFT PANEL (form content) */
+.left-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* RIGHT PANEL (order summary) */
+.right-panel {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+/* Section styles for forms */
+section.form-section {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+/* Form headers */
+section.form-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Input and select fields */
+input,
+select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Labels for input fields */
+label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    display: block;
+    color: #444;
+}
+
+/* Checkbox label styles - FIXED */
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap; /* prevents wrapping */
+    gap: 0.5rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+    flex-shrink: 0;
+    transform: scale(1.1); /* Optional: makes checkbox a bit more visible */
+}
+
+.checkbox-label span {
+    display: inline-block;
+    line-height: 1.4;
+}
+
+
+/* Confirm Button */
+button.confirm-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+button.confirm-button:hover {
+    background-color: #357ab8;
+}
+
+.confirm-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Order Summary Section */
+.summary-section h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.summary-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.summary-section li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+
+.order-items {
+    margin-bottom: 1rem;
+}
+
+.summary-section p,
+.summary-section h4 {
+    margin: 0.3rem 0;
+}
+
+.summary-section h4 {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+
+    .right-panel {
+        position: static;
+        margin-top: 2rem;
+    }
+}
+
+/* Styling for checkbox label and link */
+.checkbox-label a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.checkbox-label a:hover {
+    text-decoration: none;
+}

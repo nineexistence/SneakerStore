@@ -1,0 +1,136 @@
+.product-details-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px;
+  background-color: var(--porcelain-white);
+  flex-wrap: wrap;
+}
+
+.product-image-card {
+  flex: 1;
+  max-width: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.product-image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail.active {
+  border-color: var(--taupe-beige);
+}
+
+.product-info-block {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.product-info-block h1 {
+  font-size: 32px;
+  color: var(--jet-black);
+  margin-bottom: 15px;
+}
+
+.product-info-block p.description {
+  font-size: 16px;
+  color: var(--ash-gray);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.product-info-block .price {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--jet-black);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.size-selector {
+  margin-bottom: 30px;
+}
+
+.size-selector p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--jet-black);
+}
+
+.size-dropdown {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--ash-gray);
+  width: 100%;
+  max-width: 200px;
+  background-color: var(--porcelain-white);
+  color: var(--jet-black);
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.size-dropdown:focus {
+  outline: none;
+  border-color: var(--taupe-beige);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn {
+  background-color: var(--taupe-beige);
+  color: var(--porcelain-white);
+}
+
+.add-to-cart-btn:hover {
+  background-color: #b3773e;
+}
+
+.buy-now-btn {
+  background-color: var(--taupe-beige);
+  color: var(--jet-black);
+}
+
+.buy-now-btn:hover {
+  background-color: #cbbca9;
+}
